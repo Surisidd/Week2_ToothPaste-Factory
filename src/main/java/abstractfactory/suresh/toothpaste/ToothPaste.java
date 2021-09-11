@@ -3,33 +3,33 @@ package abstractfactory.suresh.toothpaste;
 
 public abstract class ToothPaste {
     String name;
-    
-    AluminiumHydroxide aluminuimHydroxide;
-    CalciumCarbonate calciumCarbonate;
-    Triclosan triclosan;
-    Chlorhexidine chlorhexidine;
-    Peppermint peppermint;
-    Spearmint spearmint;
-    WinterGreen winterGreen;
-    SodiumFlouride sodiumFlouride;
-    LaurylSulfate laurylSulfate;
+    Abrasive aluminuimHydroxide;
+    Abrasive calciumCarbonate;
+    Antibacterial triclosan;
+    Antibacterial chlorhexidine;
+    Flavants peppermint;
+    Flavants spearmint;
+    Flavants winterGreen;
+    Flourides sodiumFlouride;
+    Surfactants laurylSulfate;
+    Abrasive silica;
     
     abstract void prepare();
     
     void weighing(){
-        System.out.println("");
+        System.out.println("Weighing the Ingredients ...");
     }
     void mixing(){
-        System.out.println("");
+        System.out.println("Mixing the ingredients...");
     }
     void fillingTubes(){
-        System.out.println("");
+        System.out.println("Filling the tubes...");
     }
     void packaging(){
-        System.out.println("");
+        System.out.println("Packaging tooth paste into boxes...");
     }
     void qualityControl(){
-        System.out.println("");
+        System.out.println("Quality Control ensuring safe product for human consumptions");
     }
     void setName(String name){
         this.name = name;
@@ -76,7 +76,11 @@ public abstract class ToothPaste {
         if(laurylSulfate != null ){
             display.append(laurylSulfate);
             display.append("\n");
-        }                
+        }  
+        if(silica != null ){
+            display.append(silica);
+            display.append("\n");
+        }         
         return display.toString();
     }
 }

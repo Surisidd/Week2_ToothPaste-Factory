@@ -7,6 +7,7 @@ public abstract class ToothPasteStore {
     
     public ToothPaste orderToothPaste(String pasteType){
         ToothPaste toothPaste = createToothPaste(pasteType);
+
         System.out.println("---- Making a " + toothPaste.getName() + " ----");
         toothPaste.prepare();
         toothPaste.weighing();

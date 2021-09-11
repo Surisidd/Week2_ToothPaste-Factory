@@ -11,6 +11,7 @@ public interface ToothPasteIngredientFactory {
     public WinterGreen createWinterGreen();
     public SodiumFlouride createSodiumFlouride();
     public LaurylSulfate createLaurylSulfate();
+    public Silica createSilica();
     
     
 }

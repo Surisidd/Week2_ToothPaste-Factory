@@ -2,6 +2,7 @@
 package abstractfactory.suresh.toothpaste;
 
 public class CLToothPasteIngredientFactory implements ToothPasteIngredientFactory{
+    
     public AluminiumHydroxide createAluminuimHydroxide(){
         return new AluminiumHydroxide();
     }
@@ -28,5 +29,8 @@ public class CLToothPasteIngredientFactory implements ToothPasteIngredientFactor
     }
     public LaurylSulfate createLaurylSulfate(){
         return new LaurylSulfate();
+    }
+    public Silica createSilica(){
+        return new Silica();
     }
 }
